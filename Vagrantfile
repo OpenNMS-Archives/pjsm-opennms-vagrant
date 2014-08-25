@@ -1,6 +1,12 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  # Use a small CentOS 6.5 and build and install OpenNMS in Vagrant
+  # config.vm.box = "opscode_centos-6.5"
+  # config.vm.box_url = "http://mirror.opennms.eu/pub/vagrant/stable/opscode_centos-6.5_chef-provisionerless.box"
+
+  # Use an image where OpenNMS is completely pre-installed and just change configuration
   config.vm.box = "opennms-pjsm-centos-6.5"
   config.vm.box_url = "http://mirror.opennms.eu/pub/vagrant/opennms-pjsm/pjsm-opennms-centos-6.5-development.box"
 
