@@ -29,6 +29,19 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
             :end => "10.23.42.254"
           },
           :threads => "5"
+        },
+        :activemq => {
+          :eventforwarder => {
+            :location => "Birmingham"
+          }
+        }
+      },
+      :activemq => {
+        :server => {
+          :dispatcher => {
+            :broker_name => "my-uk-store-dispatcher-01",
+            :brokerUri => "tcp://127.0.0.1:61616"
+          }
         }
       },
       :java => {
