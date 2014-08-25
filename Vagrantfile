@@ -23,9 +23,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         :release => "branches/pjsm-2.0",
         :home => "/opt/opennms",
         :discovery => {
-          :foreignsource => "UK-Store-1"
+          :foreignsource => "UK-Store-1",
           :range => {
-            :start => "10.23.42.1"
+            :start => "10.23.42.1",
             :end => "10.23.42.254"
           },
           :threads => "5"
