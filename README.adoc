@@ -97,7 +97,7 @@ config.vm.box_url = "http://mirror.opennms.eu/pub/vagrant/stable/opscode_centos-
 
 === Option 2
  - OpenNMS is pre-installed
- - Make sure every base box has exactly the same OpenNMS version
+ - It ensures every base box has exactly the same OpenNMS version
 
 .Use OpenNMS pre-installed base box
 ----
