@@ -1,4 +1,4 @@
 [submodule "cookbooks/opennms-light"]
 	path = cookbooks/opennms-light
-	url = https://github.com/opennms-forge/pjsm-opennms-chef.git
+	url = https://github.com/OpenNMS/pjsm-opennms-chef.git
 	branch = development
