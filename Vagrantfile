@@ -36,6 +36,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
           },
           :threads => "5"
         },
+        :reqPush => {
+          :baseUrl => "http://172.20.1.115:8980",
+	      :restUser => "admin",
+	      :restPasswd => "admin"
+	    },
         :activemq => {
           :eventforwarder => {
             :location => "Birmingham"
@@ -62,6 +67,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       }
     }
     chef.cookbooks_path = "cookbooks"
-    chef.add_recipe "opennms-light"
+    chef.add_recipe "opennms-light::event-forwarder"
   end
 end
