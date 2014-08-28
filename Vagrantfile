@@ -11,6 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_url = "http://mirror.opennms.eu/pub/vagrant/opennms-pjsm/pjsm-opennms-centos-6.5-development.box"
 
   config.vm.network "forwarded_port", guest: 8980, host: 8980
+  config.vm.network :public_network 
 
   config.vm.provider :virtualbox do |vb|
     # Use VBoxManage to customize the VM. For example to change memory:
