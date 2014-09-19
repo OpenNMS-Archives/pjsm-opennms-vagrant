@@ -29,6 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       :opennms => {
         :release => "branches/pjsm-2.0",
         :home => "/opt/opennms",
+	:version => "1.13.5-PJSM-SNAPSHOT",
         :discovery => {
           :foreignsource => "UK-Store-1",
           :range => {
