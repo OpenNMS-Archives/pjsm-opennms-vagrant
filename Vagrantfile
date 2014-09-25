@@ -40,9 +40,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
           :threads => "5"
         },
         :reqPush => {
-          :baseUrl => "http://172.20.1.115:8980",
-	      :restUser => "admin",
-	      :restPasswd => "admin"
+          :baseUrl => "https://storemon.papajohns.com",
+	      :restUser => "eventforwarder",
+	      :restPasswd => "forwarder"
 	    },
         :activemq => {
           :eventforwarder => {
